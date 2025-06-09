@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Videos</title>
+  <link rel="website icon" type="png"
+   href="descarga.jpg">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #4f4cf6;
+      margin: 0;
+      padding: 40px 10px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .gallery {
+      width: 100%;
+      max-width: 900px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .video-container {
+      background: #c6d2f7;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-container h3 {
+      margin: 0 0 10px;
+      color: #333;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .video-wrapper video,
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gallery">
+
+    <div class="video-container">
+      <h3>Mono dando vueltas con un monito</h3>
+      <div class="video-wrapper">
+        <video controls>
+          <source src="mono dando vueltas.mp4" type="video/mp4">
+          Tu navegador no soporta la etiqueta de video.
+        </video>
+      </div>
+    </div>
+
+    <div class="video-container">
+      <h3>Monos bailando</h3>
+      <div class="video-wrapper">
+        <video controls>
+          <source src="uaauaauaauaauaauaauaauaauaa uaauaauaauaauaauaauaauaauaa.mp4" type="video/mp4">
+          Tu navegador no soporta la etiqueta de video.
+        </video>
+      </div>
+    </div>
+
+    <div class="video-container">
+      <h3>Monkey scream</h3>
+      <div class="video-wrapper">
+        <video controls>
+          <source src="mono gritando feo-Meme.mp4" type="video/mp4">
+          Tu navegador no soporta la etiqueta de video.
+        </video>
+      </div>
+    </div>
+
+    <div class="video-container">
+      <h3>Mono se golpea y llora</h3>
+      <div class="video-wrapper">
+        <video controls>
+          <source src="chango se golpea la cabeza mientras juega y se pone a llorar.mp4" type="video/mp4">
+          Tu navegador no soporta la etiqueta de video.
+        </video>
+      </div>
+    </div>
+
+    <div class="video-container">
+      <h3>A mono programador le falla el codigo</h3>
+      <div class="video-wrapper">
+        <video controls>
+          <source src="mandril en pc.mp4" type="video/mp4">
+          Tu navegador no soporta la etiqueta de video.
+        </video>
+      </div>
+    </div>
+
+ </div>
+<a href="index.html" style="
+  position: fixed;
+  bottom: 20px;
+  left: 90%;
+  transform: translateX(-50%);
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+">IR A INICIO DE QUE MONITOS</a>
+</body>
+</html>

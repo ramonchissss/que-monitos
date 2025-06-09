@@ -1,0 +1,88 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo general del body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Encabezado */
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Menú principal */
+nav {
+  background-color: #0056b3;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  background-color: #003d80;
+}
+
+/* Submenús */
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #004494;
+  min-width: 160px;
+  z-index: 1000;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li a {
+  padding: 10px 15px;
+  color: white;
+}
+
+nav ul li ul li a:hover {
+  background-color: #002d66;
+}
+
+/* Contenido principal */
+main {
+  padding: 20px;
+}
+
+/* Pie de página */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

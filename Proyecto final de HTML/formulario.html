@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Monitos 🐒</title>
+    <link rel="website icon" type="png"
+   href="descarga.jpg">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e0f7ff; 
+        }
+
+        header {
+            background-color: #007bff; 
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        form {
+            background-color: white;
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        form h2 {
+            text-align: center;
+            color: #007bff;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="color"],
+        input[type="date"],
+        input[type="file"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Registro de Monitos 🐵</h1>
+    </header>
+
+    <form action="guardar_mono.php" method="post" enctype="multipart/form-data">
+        <h2>Datos del Mono</h2>
+
+        <p>Nombre del mono:  
+            <input type="text" name="nombre" required>
+        </p>
+
+        <p>Especie:
+            <select name="especie" required>
+                <option value="">Selecciona una</option>
+                <option value="capuchino">Capuchino</option>
+                <option value="titi">Tití</option>
+                <option value="araña">Mono Araña</option>
+                <option value="mandril">Mandril</option>
+                <option value="otros">Otros</option>
+            </select>
+        </p>
+
+        <p>Edad:
+            <input type="number" name="edad" min="0" max="100" required>
+        </p>
+
+
+        <p>¿Sabe hacer trucos?<br>
+            <input type="radio" name="trucos" value="si" required> Sí
+            <input type="radio" name="trucos" value="no"> No
+        </p>
+
+        <p>Habilidades especiales:
+            <input type="text" name="habilidades" placeholder="Ej. trepar, saltar, hablar mono...">
+        </p>
+
+        <p>Alimentación favorita:
+            <select name="alimentacion">
+                <option value="bananas">Bananas</option>
+                <option value="semillas">Semillas</option>
+                <option value="insectos">Insectos</option>
+                <option value="todo">¡De todo!</option>
+            </select>
+        </p>
+
+        <p>Lugar de origen:
+            <input type="text" name="origen" placeholder="Ej. Apatzingan...">
+        </p>
+
+        <p>Fecha de registro:
+            <input type="date" name="fecha">
+        </p>
+
+        <p>Comentarios o curiosidades:
+            <textarea name="comentarios" rows="4" placeholder="¿Algo divertido sobre el mono?"></textarea>
+        </p>
+
+        <p>
+            <button type="submit">Registrar Mono</button>
+        </p>
+    </form>
+<a href="index.html" style="
+  position: fixed;
+  bottom: 20px;
+  left: 90%;
+  transform: translateX(-50%);
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+">IR A INICIO DE QUE MONITOS</a>
+</body>
+</html>
